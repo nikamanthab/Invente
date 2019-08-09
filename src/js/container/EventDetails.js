@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tab, Grid } from 'semantic-ui-react';
+import './../../css/eventdetails.css';
 
 
 class EventDetails extends React.Component{
@@ -16,17 +17,17 @@ class EventDetails extends React.Component{
         }
 
         const panes = [
-            { menuItem: 'Tab 1', render: () => <Tab.Pane>{data.round1}</Tab.Pane> },
-            { menuItem: 'Tab 2', render: () => <Tab.Pane>{data.round2}</Tab.Pane> },
-            { menuItem: 'Tab 3', render: () => <Tab.Pane>{data.round3}</Tab.Pane> },
+            { menuItem: 'Round 1', render: () => <Tab.Pane>{data.round1}</Tab.Pane> },
+            { menuItem: 'Round 2', render: () => <Tab.Pane>{data.round2}</Tab.Pane> },
+            { menuItem: 'Round 3', render: () => <Tab.Pane>{data.round3}</Tab.Pane> },
           ]
           
 
         return(
-            <div>
-                <div className="details-div">
+            <div className="details-div">
+                <div >
                     <h2>{data.title}</h2>
-                    <Grid.Row col={2}>
+                    <Grid.Row columns={2}>
                         <Grid.Column>{data.date}</Grid.Column>
                         <Grid.Column>{data.venue}</Grid.Column>
                     </Grid.Row>
