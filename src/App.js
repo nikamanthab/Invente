@@ -5,7 +5,8 @@ import Home from './js/container/home';
 import './css/sidebar.css';
 import Contact from './js/container/contact.js';
 import AboutUs from './js/container/aboutus.js';
-import Test from './js/components/picbubble';
+import PicBubble from './js/components/picbubble';
+import EventCard from './js/components/eventcard';
 
 
 function App() {
@@ -15,9 +16,8 @@ function App() {
        <Home path='/'/>
        <Contact path='/contact'/> 
        <AboutUs path='/about'/>
-       <Test path='/test'/>
-
-       
+       <PicBubble path='/test'/>
+       <EventCard path='/card'/>
      </Router>
     </div>
   );
