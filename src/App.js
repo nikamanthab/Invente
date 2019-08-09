@@ -6,6 +6,8 @@ import './css/sidebar.css';
 import Contact from './js/container/contact.js';
 import AboutUs from './js/container/aboutus.js';
 import Test from './js/components/picbubble';
+import EventDetails from './js/container/EventDetails';
+import 'semantic-ui-css/semantic.min.css'
 
 
 function App() {
@@ -16,8 +18,7 @@ function App() {
        <Contact path='/contact'/> 
        <AboutUs path='/about'/>
        <Test path='/test'/>
-
-       
+       <EventDetails path='/eventdetails/:id'/> 
      </Router>
     </div>
   );
