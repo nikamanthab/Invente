@@ -6,35 +6,23 @@ body {
 }
 
 .bulb{
-    animation: blink 2s;
+    animation: blink 2s 2.5s;
 }
 
 @keyframes blink{
     0%{
         opacity: 0
     }
-    5%{
-        opacity: 1
-    }
-    10%{
-        opacity: 0
-    }
     15%{
-        opacity: 1
-    }
-    20%{
-        opacity: 0
-    }
-    25%{
         opacity: 1
     }
     30%{
         opacity: 0
     }
-    35%{
+    45%{
         opacity: 1
     }
-    40%{
+    60%{
         opacity: 0
     }
     100%{
@@ -148,5 +136,14 @@ body {
     98% {
         -webkit-transform: rotate(359.99deg);
         transform: rotate(359.99deg);
+    }
+}
+
+@keyframes enter{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
     }
 }
